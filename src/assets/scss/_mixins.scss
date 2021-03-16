@@ -1,0 +1,18 @@
+@mixin textWithBg($imgUrl) {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: url($imgUrl);
+}
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+@mixin transformCenter() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
